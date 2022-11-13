@@ -1,0 +1,42 @@
+table {
+    border:1px solid #000;
+    width:80%;
+    border-collapse: collapse;
+    margin:auto;
+    background-color:#fff;
+}
+
+h2.pageID {
+    margin-left: 10em;
+    color: darkgray;
+}
+
+tr {
+  vertical-align:top;
+}
+
+td,th {
+  border:1px solid #000;
+  padding:.5em;
+}
+
+table.client {
+    margin:40px auto; /* T R B L */
+}
+
+table.client th {
+    text-align: left;
+    width:30%;
+}
+
+table.audience th {
+    margin:40px auto; /* T R B L */
+}
+
+table.audience th{
+    width:33.3%;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(1, 1, 75); 
+}
