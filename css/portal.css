@@ -1,3 +1,96 @@
+/* start positioning styles */
+
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+  
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ }
+
+ /* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+  
+ /* Create two equal columns that floats next to each other */
+ .my-column {
+    color: silver;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 400px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+  .my-row:after {
+    content: "";
+    display: table;
+    /*clear: both*/;
+  }
+ 
+  /* Social Media icon start */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    padding: 20px 25px;
+    background: #3B5998;
+    color: white;
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .social-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* social media icons  end*/
+
+  /* flexible image rules start here */
+ 
+.flexible img{
+    width:100%;
+ }
+  
+ .flexible{
+    display: flex;
+    justify-content: space-evenly;
+ }
+  
+ /* flexible image rules end here */
+ 
+ 
+ 
+
+/* end positioning styles */
+
 /* Global rules */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
@@ -9,7 +102,7 @@ html {
     line-height: 1.5em;
 }
 
-::selection {
+::selection { 
     color: #000; 
     background: #ff0;
 }
@@ -29,14 +122,24 @@ div.wrapper {
     overflow: auto;
 }
 
+
+
 p {
-    margin: 1em;
+    margin: 1em 1em;
 }
 
+p.flowchart {
+    display: flex;
+    margin: 2em;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5em;
+    font-size: 2em;
+}
 
 h2, h3 {
     font-weight: normal;
-    margin-left: 10sem;
+    margin-left: 1em;
     line-height: 1em;
 }
 
@@ -68,10 +171,23 @@ footer {
 }
 
 /* Responsive rules */
+/* Positioning */
+
+@media all and (max-width:500px) {
+    .my-column {
+        width: 100%;
+    }
+ }
+
 
 /* DESKTOP */
 @media all and (min-width:1200px) {
     div.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    section {
         width: 80%;
         margin: auto;
     }
@@ -102,6 +218,11 @@ footer {
         width: 90%;
         margin: auto;
     }
+
+    section {
+        width: 100%;
+        margin: auto;
+    }
     
     h1 {
         width: 89%;
@@ -122,6 +243,10 @@ footer {
 /* PHONE */
 @media all and (max-width:500px) {
     div.wrapper {
+        width: 100%;
+    }
+
+    section {
         width: 100%;
     }
     
