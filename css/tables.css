@@ -6,8 +6,14 @@ table {
     background-color:#fff;
 }
 
+section {
+    background-color: rgb(1, 1, 75);
+    
+}
+
 h2.pageID {
-    margin-left: 10em;
+    text-align: center;
+    margin-top: 1em;
     color: darkgray;
 }
 
@@ -24,6 +30,10 @@ table.client {
     margin:40px auto; /* T R B L */
 }
 
+td, tr, ul {
+    color: rgb(43, 41, 41);
+}
+
 table.client th {
     text-align: left;
     width:30%;
@@ -34,9 +44,14 @@ table.audience th {
 }
 
 table.audience th{
-    width:33.3%;
+    width:30%;
 }
 
 tr:nth-child(odd) {
-    background-color: rgb(1, 1, 75); 
+    background-color: lightblue;
+}
+
+ul {
+    list-style-position: outside;
+    margin-left: 1em;
 }
