@@ -96,7 +96,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-    background-color: rgb(43, 41, 41);
+    background-image: url(../images/board.png); 
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -225,7 +225,7 @@ footer {
     }
     
     h1 {
-        width: 89%;
+        width: 90%;
         padding-left: 1%;
     }
     
