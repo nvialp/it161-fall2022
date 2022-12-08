@@ -14,7 +14,6 @@ section {
 h2.pageID {
     text-align: center;
     margin-top: 1em;
-    color: darkgray;
 }
 
 tr {
@@ -27,6 +26,10 @@ td,th {
 }
 
 table.client {
+    margin:40px auto; /* T R B L */
+}
+
+table.audience {
     margin:40px auto; /* T R B L */
 }
 

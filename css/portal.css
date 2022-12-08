@@ -29,16 +29,16 @@
   .my-row:after {
     content: "";
     display: table;
-    /*clear: both*/;
+    clear: both;
   }
  
   /* Social Media icon start */
   .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 10px 2px;
     border-radius: 50%;
   }
    .fa:hover {
@@ -97,7 +97,7 @@
 
 html {
     background-image: url(../images/board.png); 
-    font-family: 'Quicksand', sans-serif;
+    font-family: impact, sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
 }
@@ -107,17 +107,27 @@ html {
     background: #ff0;
 }
 
+div.fixednavbar {
+    position: sticky;
+        top: 0;
+}
+
 h1 {
-    font-weight: normal;
-    margin: auto;
     background: rgb(1, 1, 75);
-    color: silver;
+    color: white;
+    font-weight: normal;
     line-height: 2.5em;
-    
+    margin: auto;
+    font-size: 3em; 
+}
+
+div.name {
+    color: rgb(70, 128, 253);
+    float: left;
 }
 
 div.wrapper {
-    background-color: rgb(3, 3, 63);
+    background-color: rgb(3, 3, 63, .8);
     color: silver;
     overflow: auto;
 }
@@ -141,6 +151,12 @@ h2, h3 {
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
+}
+
+h2.subheader {
+    color: silver;
+    font-size: 2em;
+    text-align: center;
 }
 
 a {
@@ -193,7 +209,7 @@ footer {
     }
     
     h1 {
-        width: 79%;
+        width: 80%;
         padding-left: 1%;
     }
     
